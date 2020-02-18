@@ -12,8 +12,9 @@ class DetectDeviceController extends Controller
         $agent = new Agent();
 
         $platform = $agent->platform();
+        $device = $agent->device();
         $version = $agent->version($platform);
 
-        return view('welcome', compact('platform', 'version'));
+        return view('welcome', compact('platform', 'version', 'device'));
     }
 }

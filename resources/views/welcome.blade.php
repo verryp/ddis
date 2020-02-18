@@ -21,15 +21,18 @@
             <div class="flex content-center align-center flex-wrap">
                 <div class="mt-4 md:mt-0 md:ml-6">
                     <div
-                        class="uppercase tracking-wide text-sm text-indigo-600 font-bold"
+                        class="uppercase tracking-wide text-lg text-indigo-600 font-bold"
                     >
                         {{ $platform }}
+                        <span class="text-xs text-gray-500 italic">{{
+                            $version
+                        }}</span>
                     </div>
                     <a
                         href="#"
                         class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline"
                     >
-                        {{ $version }}
+                        {{ $device }}
                     </a>
                     <p class="mt-2 text-gray-600">
                         Lorem ipsum dolor sit amet consectetur, adipisicing
